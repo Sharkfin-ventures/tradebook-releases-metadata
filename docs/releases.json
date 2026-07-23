@@ -1,6 +1,7 @@
 {
   "channels": {
     "stable": [
+      "0.3.4",
       "0.3.2",
       "0.3.1"
     ]
@@ -1099,6 +1100,19 @@
       ],
       "estimatedDowntimeSeconds": 30,
       "appImageTag": "ghcr.io/meenaraj22/tradebook-api:0.3.2",
+      "postUpgradeHook": null
+    },
+    "0.3.4": {
+      "releasedAt": "2026-07-23T11:51:20.107Z",
+      "critical": false,
+      "changelog": "apps/web/next.config.mjs uses transpilePackages: ['@tradebook/strategy-engine']\nwhich requires the workspace package at packages/strategy-engine/ to be\npresent at build time. The previous Dockerfile.web copied only apps/web/\nin isolation — bun install couldn't find the workspace package and the\nNext.js build failed with a cryptic:\n\n  TypeError: n.createContext is not a function\n  Failed to collect page data for /_not-found\n\nFix — Dockerfile.web now mirrors Dockerfile.api's pattern: copy monorepo\nskeleton (package.json, bun.lock, turbo.json, packages/, apps/web/), run\n`bun install` from workspace root, then `bun run build` inside apps/web.\n\nAlso added outputFileTracingRoot to next.config.mjs pointing at the\nworkspace root, so Next.js standalone output correctly traces\nnode_modules and packages/* into the bundle.\n\nRuntime layout updated to match monorepo standalone:\n  apps/web/server.js  ← entry\n  apps/web/.next/     ← server chunks\n  node_modules/       ← hoisted at standalone root\n  packages/           ← transpiled workspace packages\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
+      "minPreviousVersion": "0.3.0",
+      "maxPreviousVersion": null,
+      "hasMigrations": false,
+      "migrationRisk": "safe",
+      "migrationSummary": [],
+      "estimatedDowntimeSeconds": 0,
+      "appImageTag": "ghcr.io/meenaraj22/tradebook-api:0.3.4",
       "postUpgradeHook": null
     }
   }
