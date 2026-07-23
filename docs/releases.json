@@ -1,6 +1,7 @@
 {
   "channels": {
     "stable": [
+      "0.3.2",
       "0.3.1"
     ]
   },
@@ -537,6 +538,567 @@
       ],
       "estimatedDowntimeSeconds": 120,
       "appImageTag": "ghcr.io/meenaraj22/tradebook-api:0.3.1",
+      "postUpgradeHook": null
+    },
+    "0.3.2": {
+      "releasedAt": "2026-07-23T10:58:14.786Z",
+      "critical": false,
+      "changelog": "",
+      "minPreviousVersion": "0.3.0",
+      "maxPreviousVersion": null,
+      "hasMigrations": true,
+      "migrationRisk": "destructive",
+      "migrationSummary": [
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "users"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "brokers"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "orders"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "strategies"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "strategy_legs"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "memories"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "pnl_snapshots"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "trade_log"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "alerts"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "notification_channels"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "risk_config"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "ai_conversations"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "ai_messages"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "candles_1m"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "brokers"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "orders"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "orders"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "orders"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "strategies"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "strategy_legs"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "strategy_legs"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "memories"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "pnl_snapshots"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "trade_log"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "alerts"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "notification_channels"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "risk_config"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "ai_conversations"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "ai_messages"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "backtests"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "backtest_trades"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "backtest_equity_points"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "backtest_logs"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "backtests"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "backtests"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "backtest_trades"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "backtest_equity_points"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "backtest_logs"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_nullable",
+          "table": "orders",
+          "column": "deployment_id"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_nullable",
+          "table": "strategy_legs",
+          "column": "deployment_id"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "deployments"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "orders"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "strategy_legs"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "deployments"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "deployments"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_not_null_default",
+          "table": "orders",
+          "column": "entry_cycle"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_not_null_default",
+          "table": "deployments",
+          "column": "multiplier"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_nullable",
+          "table": "orders",
+          "column": "leg_id"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_nullable",
+          "table": "strategy_legs",
+          "column": "exit_spot_price"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_nullable",
+          "table": "alerts",
+          "column": "action"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_nullable",
+          "table": "risk_config",
+          "column": "max_external_order_value"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_nullable",
+          "table": "strategy_legs",
+          "column": "entry_spot_price"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "api_keys"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "api_key_logs"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "api_keys"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "api_key_logs"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_nullable",
+          "table": "deployments",
+          "column": "stop_reason"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_nullable",
+          "table": "strategy_legs",
+          "column": "entry_spot_price"
+        },
+        {
+          "class": "safe",
+          "type": "alter_type_add_value"
+        },
+        {
+          "class": "risky",
+          "type": "unknown"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_not_null_default",
+          "table": "orders",
+          "column": "revisions"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_not_null_default",
+          "table": "deployments",
+          "column": "ast_version"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_type"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "backup_jobs"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "backup_jobs"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_not_null_default",
+          "table": "backup_jobs",
+          "column": "selected_tables"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "backup_imported_rows"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "destructive",
+          "type": "drop_table",
+          "table": "pnl_snapshots"
+        }
+      ],
+      "estimatedDowntimeSeconds": 30,
+      "appImageTag": "ghcr.io/meenaraj22/tradebook-api:0.3.2",
       "postUpgradeHook": null
     }
   }
