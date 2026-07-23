@@ -1,6 +1,7 @@
 {
   "channels": {
     "stable": [
+      "0.3.5",
       "0.3.4",
       "0.3.2",
       "0.3.1"
@@ -1113,6 +1114,19 @@
       "migrationSummary": [],
       "estimatedDowntimeSeconds": 0,
       "appImageTag": "ghcr.io/meenaraj22/tradebook-api:0.3.4",
+      "postUpgradeHook": null
+    },
+    "0.3.5": {
+      "releasedAt": "2026-07-23T13:55:46.391Z",
+      "critical": false,
+      "changelog": "",
+      "minPreviousVersion": "0.3.0",
+      "maxPreviousVersion": null,
+      "hasMigrations": false,
+      "migrationRisk": "safe",
+      "migrationSummary": [],
+      "estimatedDowntimeSeconds": 0,
+      "appImageTag": "ghcr.io/meenaraj22/tradebook:0.3.5",
       "postUpgradeHook": null
     }
   }
