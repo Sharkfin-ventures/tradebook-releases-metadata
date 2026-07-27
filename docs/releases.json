@@ -1,6 +1,7 @@
 {
   "channels": {
     "stable": [
+      "0.3.6",
       "0.3.5",
       "0.3.4",
       "0.3.2",
@@ -1127,6 +1128,19 @@
       "migrationSummary": [],
       "estimatedDowntimeSeconds": 0,
       "appImageTag": "ghcr.io/meenaraj22/tradebook:0.3.5",
+      "postUpgradeHook": null
+    },
+    "0.3.6": {
+      "releasedAt": "2026-07-27T12:11:12.259Z",
+      "critical": false,
+      "changelog": "Web build failed with:\n  Type '\"error\"' is not assignable to type\n  '\"destructive\" | \"default\" | \"success\" | undefined'.\n\nThe Toast component's Variant union does not include 'error' —\n'destructive' is the standard shadcn/radix name for the error style.\nTwo occurrences fixed:\n- page.tsx:166  (Refresh failed toast)\n- upgrade-confirm-dialog.tsx:95  (Upgrade could not start toast)\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
+      "minPreviousVersion": "0.3.0",
+      "maxPreviousVersion": null,
+      "hasMigrations": false,
+      "migrationRisk": "safe",
+      "migrationSummary": [],
+      "estimatedDowntimeSeconds": 0,
+      "appImageTag": "ghcr.io/meenaraj22/tradebook:0.3.6",
       "postUpgradeHook": null
     }
   }
