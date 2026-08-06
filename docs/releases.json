@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-06T14:25:02.122Z",
+      "releasedAt": "2026-08-06T14:36:30.567Z",
       "critical": false,
-      "changelog": "fix(runtime-config): bypass Next.js DefinePlugin via bracket-notation…",
+      "changelog": "fix(runtime-config): force dynamic rendering so RuntimeEnvScript read…",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
