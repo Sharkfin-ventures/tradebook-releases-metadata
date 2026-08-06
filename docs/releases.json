@@ -1,6 +1,7 @@
 {
   "channels": {
     "stable": [
+      "0.3.10",
       "0.3.9",
       "0.3.8",
       "0.3.7",
@@ -58,6 +59,19 @@
       "migrationSummary": [],
       "estimatedDowntimeSeconds": 0,
       "appImageTag": "ghcr.io/sharkfin-ventures/tradebook:0.3.9",
+      "postUpgradeHook": null
+    },
+    "0.3.10": {
+      "releasedAt": "2026-08-06T13:05:23.532Z",
+      "critical": false,
+      "changelog": "fix(updates-ui): progress dialog says \"Downgrading\" on rollback / old…",
+      "minPreviousVersion": "0.3.0",
+      "maxPreviousVersion": null,
+      "hasMigrations": false,
+      "migrationRisk": "safe",
+      "migrationSummary": [],
+      "estimatedDowntimeSeconds": 0,
+      "appImageTag": "ghcr.io/sharkfin-ventures/tradebook:0.3.10",
       "postUpgradeHook": null
     }
   }
