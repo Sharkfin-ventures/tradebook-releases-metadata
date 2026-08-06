@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-06T14:36:30.567Z",
+      "releasedAt": "2026-08-06T15:45:15.429Z",
       "critical": false,
-      "changelog": "fix(runtime-config): force dynamic rendering so RuntimeEnvScript read…",
+      "changelog": "fix(runtime-config): read env via globalThis so DefinePlugin can't ba…",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
