@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-07T11:10:01.669Z",
+      "releasedAt": "2026-08-07T14:19:23.329Z",
       "critical": false,
-      "changelog": "Fix/broker oauth egress binding dev",
+      "changelog": "feat(api): migrate runtime from Bun to Node so per-broker egress-IP b…",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
