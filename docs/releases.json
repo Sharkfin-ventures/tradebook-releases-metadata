@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-07T14:19:23.329Z",
+      "releasedAt": "2026-08-07T14:37:21.677Z",
       "critical": false,
-      "changelog": "feat(api): migrate runtime from Bun to Node so per-broker egress-IP b…",
+      "changelog": "fix(dockerfile): bump runtime Node from 20 to 22 (undici 8.x requirem…",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
