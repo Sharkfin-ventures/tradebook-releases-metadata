@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-07T14:37:21.677Z",
+      "releasedAt": "2026-08-10T07:13:30.811Z",
       "critical": false,
-      "changelog": "fix(dockerfile): bump runtime Node from 20 to 22 (undici 8.x requirem…",
+      "changelog": "chore(deps): bump nsekit to 0.3.10 for the undici Agent+factory egres…",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
