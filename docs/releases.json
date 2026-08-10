@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-10T10:09:04.796Z",
+      "releasedAt": "2026-08-10T10:40:14.577Z",
       "critical": false,
-      "changelog": "fix(api): route global fetch through undici@8 so nsekit dispatchers work",
+      "changelog": "fix(dashboard-balance): fall back to segment sum when top-level margi…",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
