@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-10T07:13:30.811Z",
+      "releasedAt": "2026-08-10T09:16:59.214Z",
       "critical": false,
-      "changelog": "chore(deps): bump nsekit to 0.3.10 for the undici Agent+factory egres…",
+      "changelog": "chore(deps): bump nsekit to 0.3.11 (Pool factory: drop opts spread)",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
