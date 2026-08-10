@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-10T09:16:59.214Z",
+      "releasedAt": "2026-08-10T10:09:04.796Z",
       "critical": false,
-      "changelog": "chore(deps): bump nsekit to 0.3.11 (Pool factory: drop opts spread)",
+      "changelog": "fix(api): route global fetch through undici@8 so nsekit dispatchers work",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
