@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-14T05:48:35.220Z",
+      "releasedAt": "2026-08-14T12:51:11.487Z",
       "critical": false,
-      "changelog": "feat(updater): backfill currentVersion from api /health on fresh install",
+      "changelog": "fix(updates-ui): rollback progress dialog no longer hangs on \"Waiting…",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
