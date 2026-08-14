@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-13T13:54:28.163Z",
+      "releasedAt": "2026-08-14T05:48:35.220Z",
       "critical": false,
-      "changelog": "fix(compose): disable updater healthcheck + wire api → updater via ho…",
+      "changelog": "feat(updater): backfill currentVersion from api /health on fresh install",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
