@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-14T12:51:11.487Z",
+      "releasedAt": "2026-08-21T12:35:41.610Z",
       "critical": false,
-      "changelog": "fix(updates-ui): rollback progress dialog no longer hangs on \"Waiting…",
+      "changelog": "feat(lot-size): resolve dynamically from broker instrument dump; kill…",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
