@@ -90,9 +90,9 @@
       "postUpgradeHook": null
     },
     "0.3.12": {
-      "releasedAt": "2026-08-21T14:16:14.137Z",
+      "releasedAt": "2026-08-24T10:57:11.345Z",
       "critical": false,
-      "changelog": "Loads the actual TradeBook JSON exports (metadata.ast shape) and drives\nRunningStrategy with synthetic tick sequences — same pattern as the\nexisting sfv-dual-berettas.test.ts. Two fixtures, 22 tests:\n\nSharkfin 4-leg Nifty (13 tests):\n  - AST shape pinning: 4 legs, per-leg SL -20%, per-leg TSL:11/1/2/1\n    wrapped in AND(sibling LEG_EXIT with SL, tsl), roll-up gate\n    (LEG_QTY==0 + time >= 11:00), re-entry cooldown\n  - Full cascade sim: CE hits -20% SL -> CE closes -> PE profits past\n    +11% activateAt -> HWM ratchets -> PE reverses -> TSL exit fires\n\nSensex Iron Condor 8-leg (9 tests):\n  - AST shape pinning: 4 shorts at offset +9, 4 hedges with\n    relative_to_leg for BOTH strike AND expiry (pins the 2026-08-20\n    incident regression: expiry.offset MUST be undefined)\n  - Correct hedge-to-anchor cross-references\n  - Two leg-groups with 09:20-09:25 overnight-close window\n  - Deploy smoke test: 8 legs settle to WAITING_ENTRY cleanly\n\nFull strategy-engine suite: 957/957 pass.\n\nFollow-ups tracked: #211 (Sharkfin roll-up + re-entry), #212 (Sensex\nhedge resolution + short SL scenario).\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01C2EsX3FnZdyHG1DX24MkT3",
+      "changelog": "",
       "minPreviousVersion": "0.3.0",
       "maxPreviousVersion": null,
       "hasMigrations": false,
