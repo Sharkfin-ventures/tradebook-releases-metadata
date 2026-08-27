@@ -1,6 +1,7 @@
 {
   "channels": {
     "stable": [
+      "1.8.0",
       "1.6.29",
       "1.6.28",
       "1.6.26",
@@ -212,6 +213,19 @@
       "migrationSummary": [],
       "estimatedDowntimeSeconds": 0,
       "appImageTag": "ghcr.io/sharkfin-ventures/tradebook:1.6.29",
+      "postUpgradeHook": null
+    },
+    "1.8.0": {
+      "releasedAt": "2026-08-27T11:56:07.980Z",
+      "critical": false,
+      "changelog": "Empty commit so bump-version.yml sees [skip-bump] at the pushed tip and\nskips its auto-patch-bump. Without this the tip commit would be the\n\"Merge origin/master into dev\" merge (no skip tag), and master would\nauto-bump 1.8.0 -> 1.8.1 the instant this lands, defeating the manual\nmilestone bump.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01C2EsX3FnZdyHG1DX24MkT3",
+      "minPreviousVersion": "0.3.0",
+      "maxPreviousVersion": null,
+      "hasMigrations": false,
+      "migrationRisk": "safe",
+      "migrationSummary": [],
+      "estimatedDowntimeSeconds": 0,
+      "appImageTag": "ghcr.io/sharkfin-ventures/tradebook:1.8.0",
       "postUpgradeHook": null
     }
   }
