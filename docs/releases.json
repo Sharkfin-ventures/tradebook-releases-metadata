@@ -1,6 +1,7 @@
 {
   "channels": {
     "stable": [
+      "1.10.0",
       "1.9.71",
       "1.9.70",
       "1.8.22",
@@ -394,6 +395,19 @@
       "migrationSummary": [],
       "estimatedDowntimeSeconds": 0,
       "appImageTag": "ghcr.io/sharkfin-ventures/tradebook:1.9.71",
+      "postUpgradeHook": null
+    },
+    "1.10.0": {
+      "releasedAt": "2026-11-11T12:17:25.766Z",
+      "critical": false,
+      "changelog": "The rel_20 Jenkinsfile was a copy of rel_19's and would have tested rel_19\nagain. It now builds, tags and tests rel_20, on Fridays 22:30 UTC (the slot\nthe disabled rel_18 job used), one day before the rel_19 job, so the two\nnever share the regression stack at the same time.\n\nminPreviousVersion 1.9.0 (runbook step 5): the Updates screen will not\noffer 1.10 to a 1.8.x server, whose database predates the 1.9 changes.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_013Tozw8UKZmZ9GtJzhG5eyg",
+      "minPreviousVersion": "1.9.0",
+      "maxPreviousVersion": null,
+      "hasMigrations": false,
+      "migrationRisk": "safe",
+      "migrationSummary": [],
+      "estimatedDowntimeSeconds": 0,
+      "appImageTag": "ghcr.io/sharkfin-ventures/tradebook:1.10.0",
       "postUpgradeHook": null
     }
   }
