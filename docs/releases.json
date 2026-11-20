@@ -1,6 +1,7 @@
 {
   "channels": {
     "stable": [
+      "1.10.43",
       "1.10.41",
       "1.10.38",
       "1.9.81",
@@ -653,6 +654,78 @@
       "migrationSummary": [],
       "estimatedDowntimeSeconds": 0,
       "appImageTag": "ghcr.io/sharkfin-ventures/tradebook:1.10.41",
+      "postUpgradeHook": null
+    },
+    "1.10.43": {
+      "releasedAt": "2026-11-20T13:19:09.199Z",
+      "critical": false,
+      "changelog": "",
+      "minPreviousVersion": "1.9.0",
+      "maxPreviousVersion": null,
+      "hasMigrations": true,
+      "migrationRisk": "safe",
+      "migrationSummary": [
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "user_two_factor"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "trusted_devices"
+        },
+        {
+          "class": "safe",
+          "type": "create_table",
+          "table": "passkeys"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "create_index"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "user_two_factor"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "trusted_devices"
+        },
+        {
+          "class": "safe",
+          "type": "add_constraint",
+          "table": "passkeys"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_not_null_default",
+          "table": "user_two_factor",
+          "column": "failed_codes"
+        },
+        {
+          "class": "safe",
+          "type": "add_column_nullable",
+          "table": "user_two_factor",
+          "column": "code_retry_at"
+        }
+      ],
+      "estimatedDowntimeSeconds": 15,
+      "appImageTag": "ghcr.io/sharkfin-ventures/tradebook:1.10.43",
       "postUpgradeHook": null
     }
   }
