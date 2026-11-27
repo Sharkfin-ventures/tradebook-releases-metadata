@@ -1,6 +1,7 @@
 {
   "channels": {
     "stable": [
+      "1.10.68",
       "1.10.63",
       "1.10.62",
       "1.10.55",
@@ -49,8 +50,7 @@
       "1.6.22",
       "1.6.3",
       "0.3.12",
-      "0.3.11",
-      "0.3.10"
+      "0.3.11"
     ]
   },
   "releases": {
@@ -820,6 +820,24 @@
       "migrationSummary": [],
       "estimatedDowntimeSeconds": 0,
       "appImageTag": "ghcr.io/sharkfin-ventures/tradebook:1.10.63",
+      "postUpgradeHook": null
+    },
+    "1.10.68": {
+      "releasedAt": "2026-11-27T22:35:53.326Z",
+      "critical": false,
+      "changelog": "",
+      "minPreviousVersion": "1.9.0",
+      "maxPreviousVersion": null,
+      "hasMigrations": true,
+      "migrationRisk": "safe",
+      "migrationSummary": [
+        {
+          "class": "safe",
+          "type": "alter_type_add_value"
+        }
+      ],
+      "estimatedDowntimeSeconds": 15,
+      "appImageTag": "ghcr.io/sharkfin-ventures/tradebook:1.10.68",
       "postUpgradeHook": null
     }
   }
